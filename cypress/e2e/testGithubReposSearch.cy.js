@@ -19,5 +19,10 @@ describe('Test 01: End to end Positive Scenario: Succesful search', () => {
     //Now lets validate the Result
     cy.ValidateText(':nth-child(1) > :nth-child(1) > a','HelloWorld') // Custom Command to validate text of results
 
+    // Trigger an action that opens a new tab
+    cy.get(':nth-child(1) > :nth-child(1) > a').click() // Clicking the first element
+  
+    
+
   })
 })
